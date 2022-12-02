@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.mvl-character-gri-filters {
+  box-sizing: border-box;
+  width: 66vw;
+  height: 60px;
+  border-bottom: 3px solid gray;
+  margin: 0 0 1em 0;
+  input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 20px;
+    width: inherit;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    transition: 300ms ease;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+  input:focus {
+    transition: 100ms ease;
+    // border: 3px solid rgb(245, 143, 0);
+  }
+  input::placeholder{
+    color: rgb(158, 158, 158);
+    margin: 0px;
+  }
+}
+
