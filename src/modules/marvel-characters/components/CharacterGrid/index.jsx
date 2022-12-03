@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-
 import { getCharactersForGrid } from '@/modules/marvel-characters/services';
-
 import CharacterCard from '@/modules/marvel-characters/components/CharacterCard';
 import Paginator from '@/modules/core/components/molecules/Paginator';
 import './styles.scss';
@@ -24,6 +22,7 @@ export default function CharacterGridPaginated() {
   async function fetchCharactersAtPage(page = 1) {
     setLoading(true);
     const data = await getCharactersForGrid(page, ITEMS_PER_PAGE);
+    console.log(data);
     setTotalItems(data.total);
     setCharacters(data.results);
     setLoading(false);
