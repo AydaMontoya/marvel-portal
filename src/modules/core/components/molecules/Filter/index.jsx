@@ -1,8 +1,12 @@
 import React from 'react';
+//import Lupita from '../../atoms/Lupita';
+import './styles.scss';
+
 export default function Filter() {
   return (
     <div className="mvl-character-gri-filters">
-      <input type="text" placeholder="search" />
+      {/*<Lupita />*/}
+      <input type="text" placeholder="SEARCH" />
     </div>
   );
 }

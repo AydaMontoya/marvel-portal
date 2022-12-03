@@ -3,14 +3,10 @@
   overflow: hidden;
   background: var(--color-primary-dark);
   color: var(--color-accent);
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
   cursor: pointer;
-}
-
-// aca
-
-.mvl-character-card:hover .mvl-character-card__image {
-  transform: scale(1.1);
-  height: 97%;
 }
 
 //aca
