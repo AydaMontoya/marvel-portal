@@ -9,8 +9,6 @@
   cursor: pointer;
 }
 
-//aca
-
 .mvl-character-card__image-container {
   background: black;
   height: 50%;
@@ -35,8 +33,6 @@
   border-bottom: 2px solid red;
 }
 
-//aca
-
 .mvl-character-card__body {
   padding: var(--space-sm);
   height: 2px;
@@ -47,8 +43,6 @@
   height: 355px;
   background: red;
 }
-
-//aca
 
 .mvl-character-card[data-is-skeleton='true'] {
   position: relative;
@@ -67,4 +61,5 @@
 .mvl-character-card-paragraph {
   font-size: 15px;
   font-weight: bold;
+  margin-top: 40px;
 }
