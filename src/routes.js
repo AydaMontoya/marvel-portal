@@ -10,7 +10,7 @@ const AppRoutes = () => (
   <Routes>
     <Route exact path="/" element={<CharacterPage />} />
     <Route exact path="/details" element={<DetailsPage />} />
-    <Route exact path="/comics" element={<ComicsPage />} />
+    <Route exact path="/" element={<ComicsPage />} />
     <Route exact path="/events" element={<EventsPage />} />
     <Route element={<NotFoundPage404 />} />
   </Routes>

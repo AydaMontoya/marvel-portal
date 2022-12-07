@@ -14,8 +14,7 @@ export function NavMenu() {
           <NavLink className="mvl-navbar-item mvl-navbar-item--text" to="/">
             Characters
           </NavLink>
-          
-          <NavLink className="mvl-navbar-item mvl-navbar-item--text" to="/">
+          <NavLink className="mvl-navbar-item mvl-navbar-item--text" to="/comics">
             Comics
           </NavLink>
           <NavLink className="mvl-navbar-item mvl-navbar-item--text" to="/">
@@ -26,7 +25,8 @@ export function NavMenu() {
           </NavLink>
           <NavLink className="mvl-navbar-item mvl-navbar-item--text" to="/">
             Series
-          </NavLink><NavLink className="mvl-navbar-item mvl-navbar-item--text" to="/">
+          </NavLink>
+          <NavLink className="mvl-navbar-item mvl-navbar-item--text" to="/">
             Stories
           </NavLink>
         </div>
