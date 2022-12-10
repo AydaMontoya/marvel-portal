@@ -1,59 +1,90 @@
-* {
-  /* font-family: 'Roboto';
-  font-weight: normal; */
-}
+@import '../../../../../assets/styles/main.scss';
 
 .mvl-main-footer {
-  display: flex;
-  flex-direction: row;
-  height: 400px;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  /* position: relative; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 35% 20%;
+  color: white;
+  height: 300px;
   align-items: center;
   background-color: var(--color-primary-dark);
   color: var(--color-accent);
-  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    line-height: 1.8;
+  }
+
+  a:hover {
+    color: gray;
+  }
 }
 
-#marvel-widget-footer {
+.main-footer-logo {
+  @include centerFlex;
+  img {
+    width: 80px;
+    height: 120px;
+  }
+}
+
+.main-footer-promo {
   display: flex;
-  flex-direction: row;
-  /* opacity: 1;
-  transition: opacity 0.2s linear 0s; */
+  flex-direction: column;
+}
+.main-footer-promotions-link {
+  @include centerFlex;
+
+  h4 {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  h4:hover {
+    color: none;
+  }
+
+  p {
+    margin-top: 0px;
+    font-size: 12px;
+    color: gray;
+  }
+
+  img {
+    width: 54px;
+    height: 24px;
+    margin-right: 30px;
+  }
+
+  .unlimited {
+    width: 25px;
+    height: 35px;
+    margin-right: 35px;
+  }
 }
 
-.mvl-main-footer .main-footer {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 38px;
+.icono {
+  margin-right: 50px;
+  h4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    @include grid(4, 0, 100%);
+    padding: 0;
+  }
 }
 
-.mvl-main-footer .main-footer-content {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
-.main-footer {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  
-}
-
-.main-footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-footepromo {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-footer-follow {
-  display: flex;
-  justify-content: space-between;
+.icons {
+  width: 24px;
+  height: 25px;
 }
