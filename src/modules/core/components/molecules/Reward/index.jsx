@@ -1,6 +1,8 @@
 import './styles.scss';
 import React from 'react';
+import Swal from 'sweetalert2'
 export default function Reward() {
+  const alerta = ()=> Swal.fire('is not available to a')
   return (
     <div className="mvl-reward-content">
       <div className="mvl-reward-content-image">
@@ -10,7 +12,7 @@ export default function Reward() {
         <h6 className="mvl-reward-title">MARVEL INSIDER</h6>
         <h4>Whatch, Earn, Redeem!</h4>
         <p>Get rewarded for doing what you already do as a fan.</p>
-        <button className="mvl-reward button-red">JOIN NOW</button>
+        <button className="mvl-reward button-red" onClick={alerta}>JOIN NOW</button>
         <p className="mvl-reward-conditions">Terms and Conditions Apply</p>
       </div>
     </div>
