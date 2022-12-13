@@ -29,6 +29,9 @@ export function NavMenu() {
           <NavLink className="mvl-navbar-item mvl-navbar-item--text" to="/">
             Stories
           </NavLink>
+          <NavLink className="mvl-navbar-item mvl-navbar-item--text" to="/featured-characters">
+            featured characters
+          </NavLink>
         </div>
       </div>
 

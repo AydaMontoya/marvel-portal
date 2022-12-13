@@ -11,15 +11,44 @@
   color: var(--color-accent);
   font-size: 14px;
   font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 40px 0px 0px;
 
   img {
     width: 460px;
     height: 250px;
     margin-left: 150px;
-    margin-top: 0;
+    padding: 0px;
   }
 
-  a {
+  .mvl-reward-title {
+    color: #f0141e;
+  }
+  .mvl-reward-conditions {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .mvl-reward-conditions-content {
+    margin-left: 100px;
+  }
+
+  .mvl-reward {
+    border-radius: 15px 0px;
+    color: white;
+    padding: 12px 28px;
+    cursor: pointer;
+  }
+
+  .button-red {
+    background-color: #e62429;
+  }
+  .button-red:hover {
+    background: #da190b;
+  }
+
+  /*  a {
     text-decoration: none;
     color: white;
   }
@@ -31,9 +60,9 @@
 
   a:hover {
     color: gray;
-  }
+  } */
 }
-
+/* 
 .main-footer-logo {
   @include centerFlex;
   img {
@@ -95,3 +124,4 @@
   width: 24px;
   height: 25px;
 }
+ */
