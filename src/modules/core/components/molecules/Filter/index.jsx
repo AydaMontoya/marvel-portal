@@ -1,6 +1,6 @@
 import React from 'react';
 import MyDropdown from '../Dropdown/MyDropdown';
-//import Lupita from '../../atoms/Lupita';
+import Lupita from '../../atoms/Lupita';
 import './styles.scss';
 import { useState } from 'react';
 import Drop from '../../atoms/Drop';
@@ -15,7 +15,7 @@ export default function Filter() {
   return (
     <div className='mvl-character-filter-main'>
       <div className="mvl-character-gri-filters">
-        {/*<Lupita />*/}
+        <Lupita />
         <input type="text" placeholder="SEARCH" />
       </div>
       <div className='mvl-movie-filter'>

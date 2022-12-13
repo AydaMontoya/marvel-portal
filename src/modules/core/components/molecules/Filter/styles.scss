@@ -9,13 +9,13 @@
   box-sizing: border-box;
   width: 60vw;
   height: 60px;
-  border-bottom: 3px solid gray;
+  border-bottom: 5px solid gray;
   margin: 0 0 1em 0;
   input {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 20px;
+    height: 38px;
     width: inherit;
     border: none;
     outline: none;
@@ -27,7 +27,7 @@
   }
   input:focus {
     transition: 100ms ease;
-    // border: 3px solid rgb(245, 143, 0);
+    border: 3px solid rgb(245, 143, 0);
   }
   input::placeholder{
     color: rgb(158, 158, 158);
