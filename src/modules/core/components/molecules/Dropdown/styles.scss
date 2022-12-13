@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.CheckboxMenu .dropdown-item:hover,
+.CheckboxMenu .dropdown-item:active {
+  background-color: transparent;
+  color: black;
+}
+
+.dropdown-check-list{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  font-family: 'Roboto Condensed', sans-serif;
+  svg{
+    width: 20px;
+    color: red;
+  }
+  ul{
+    list-style: none;
+    li{
+      input{
+        margin-right: 0.2em;
+      }
+    }
+  }
+}
