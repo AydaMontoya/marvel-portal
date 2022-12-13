@@ -35,7 +35,7 @@ export default function Pagination({ totalItems, pageSize = 10, initialPage = 1,
     <div className="mvl-paginator">
       <span className="mvl-paginator__text">
         Page <strong>{currentPage} </strong> of <strong>{totalPages}</strong>
-      </span>
+      </span> 
       <div className="mvl-paginator__actions">
         <button disabled={isFirstPage(currentPage)} onClick={onPreviousPageClick}>
           <BiChevronLeft />
