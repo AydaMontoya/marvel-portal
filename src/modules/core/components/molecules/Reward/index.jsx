@@ -2,7 +2,7 @@ import './styles.scss';
 import React from 'react';
 import Swal from 'sweetalert2'
 export default function Reward() {
-  const alerta = ()=> Swal.fire('is not available to a')
+  const alerta = ()=> Swal.fire('Hey, this is not ready yet, come back later')
   return (
     <div className="mvl-reward-content">
       <div className="mvl-reward-content-image">
