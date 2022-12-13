@@ -12,27 +12,27 @@ function MyDropdown() {
           </li>
           <li>
             <input type="checkbox" />
-            Orange
+            Infinity War
           </li>
           <li>
             <input type="checkbox" />
-            Grapes{' '}
+            Guardians of the Galaxy{' '}
           </li>
           <li>
             <input type="checkbox" />
-            Berry{' '}
+            Black Panther{' '}
           </li>
           <li>
             <input type="checkbox" />
-            Mango{' '}
+            Iron Man{' '}
           </li>
           <li>
             <input type="checkbox" />
-            Banana{' '}
+            Civil War{' '}
           </li>
           <li>
             <input type="checkbox" />
-            Tomato
+            Spider-Man Homecoming
           </li>
         </ul>
       </div>
