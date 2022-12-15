@@ -5,7 +5,7 @@ import CharacterCard from '@/modules/marvel-characters/components/CharacterCard'
 import Paginator from '@/modules/core/components/molecules/Paginator';
 import './styles.scss';
 import Filter from '@/modules/core/components/molecules/Filter';
-
+// import Typed from "typed.js";
 const INITIAL_PAGE = 1;
 const ITEMS_PER_PAGE = 24;
 
@@ -36,11 +36,20 @@ export default function CharacterGridPaginated() {
     setQueryParams(query);
   };
 
+  // const typed = new Typed(".typed", {
+  //   strings: ["cargando...", "cargando...", "cargando..."],
+  //   typeSpeed: 100,
+  //   backSpeed: 60,
+  //   loop: true,
+  // });
+  // console.log(typed);
+
   return (
     <>
       <Filter query={queryParams} onQueryChange={onQueryChange} />
       <h1 className="mvl-character-grid-title">el total de personajes es {totalItems}</h1>
       <div className="mvl-grid mvl-grid-6">
+      <span className="typed"></span>
         <CharacterGrid
           characters={characters}
           isLoading={isLoading}
