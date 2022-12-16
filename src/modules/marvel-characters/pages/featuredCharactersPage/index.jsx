@@ -6,17 +6,10 @@ import CharacterCard from '../../components/CharacterCard';
 export function FeaturedCharacters() {
   return (
     <div className="mvl-characters-page">
-      <header className="mvl-characters-page-header">
-        <h1 className="u-no-margin">MARVELS FETURED CHARACTERS</h1>
-        <p>Get a list of all Marvels characters and villians</p>
-      </header>
-
+     
       <div className="container">
-        <section className="mvl-section-card">
-          {/* <p>Use this space to add some cards and other content </p> */}
-        </section>
 
-        <h1>MARVELS FETURED CHARACTERS</h1>
+        <h1>FEATURED CHARACTERS</h1>
         <div className="container-card ">
           <CharacterCard
             name="SHURI"

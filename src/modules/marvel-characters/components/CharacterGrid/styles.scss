@@ -7,15 +7,9 @@
     box-sizing: border-box;
 }
 .mvl-character-grid-title{
-    background-image: url('/assets/images/characters_banner.jpeg');
-    max-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-accent);
-    flex-direction: column;
-    width: 100%;
-    color: red;
-    
-
+    padding: 9px 30px 9px 9px;
+    color: gray;
+    padding-right: 30px;
+    width: fit-content;
+    border: 3px solid rgb(205, 3, 37);
 }
