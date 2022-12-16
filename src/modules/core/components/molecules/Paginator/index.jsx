@@ -3,8 +3,9 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
+import { BiCaretRight, BiChevronLeft } from 'react-icons/bi';
 import './styles.scss';
+
 
 Pagination.propTypes = {
   totalItems: PropTypes.number.isRequired,
@@ -34,14 +35,15 @@ export default function Pagination({ totalItems, pageSize = 10, initialPage = 1,
   return (
     <div className="mvl-paginator">
       <span className="mvl-paginator__text">
-        Page <strong>{currentPage} </strong> of <strong>{totalPages}</strong>
+        Page <strong>{currentPage} </strong> ... <strong>{totalPages}</strong>
       </span> 
       <div className="mvl-paginator__actions">
         <button disabled={isFirstPage(currentPage)} onClick={onPreviousPageClick}>
           <BiChevronLeft />
         </button>
         <button disabled={isLastPage(currentPage, totalPages)} onClick={onNextpageClick}>
-          <BiChevronRight />
+        <strong> NEXT </strong>
+          <BiCaretRight />
         </button>
       </div>
     </div>
