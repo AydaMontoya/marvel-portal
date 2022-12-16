@@ -47,7 +47,7 @@ export default function CharacterGridPaginated() {
   return (
     <>
       <Filter query={queryParams} onQueryChange={onQueryChange} />
-      <h1 className="mvl-character-grid-title">el total de personajes es {totalItems}</h1>
+      <h1 className="mvl-character-grid-title"> El total de personajes es {totalItems}</h1>
       <div className="mvl-grid mvl-grid-6">
       <span className="typed"></span>
         <CharacterGrid
