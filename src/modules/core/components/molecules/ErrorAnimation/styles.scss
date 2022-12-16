@@ -24,18 +24,27 @@
   padding: 0;
 }
 .mlv-main-error-div {
+  display: grid;
+  grid-template-columns: 40% 60%;
   padding-right: 30px;
   padding-left: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes rotate {
-    0%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.textIzquierdo {
+  width: 70%;
+  justify-self: right;
 }

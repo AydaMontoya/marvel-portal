@@ -22,6 +22,7 @@ export default function Filter() {
         <button onClick={showBox}>MOVIES <Drop/></button>
         {show?<MyDropdown />:console.log('no show')}
       </div>
+      
     </div>
   );
 }
