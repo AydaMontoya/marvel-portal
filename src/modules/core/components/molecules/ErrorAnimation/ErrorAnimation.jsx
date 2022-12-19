@@ -1,19 +1,46 @@
-import React from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import './styles.scss';
 
 function ErrorAnimation() {
+  const [mouseCoordinates, setMouseCoordinates] = useState({ x: 0, y: 0 });
+
+  const eyeLeft = useRef();
+
+  function calcAngle(element) {
+    if (!element.current) return;
+
+    let elX = element.current.offsetLeft + element.current.clientWidth / 2;
+    let elY = element.current.offsetTop + element.current.clientHeight / 2;
+
+    var rad = Math.atan2(mouseCoordinates.x - elX, mouseCoordinates.y - elY);
+    var rot = rad * (180 / Math.PI) * -1 + -180;
+
+    return rot;
+  }
+
+  const handleMouseMove = (event) => {
+    setMouseCoordinates({ x: event.clientX, y: event.clientY });
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   return (
-    <div className="mlv-main-error-div">
-      <div className="textIzquierdo">
-        <h1>404 PAGE NOT FOUN </h1>
-        <h3>Not even the Eye Uatu sees your request ...</h3>
-        <p>
-          Check that you typed the address correctly, go back to your previous page or try using our
-          site search to find something specific
-        </p>
+    <div className="error-animation">
+      <div className="eye-container">
+        <div
+          ref={eyeLeft}
+          style={{
+            transform: `rotate(${calcAngle(eyeLeft)}deg)`
+          }}
+          className="eye-error"></div>
       </div>
-      <div className="mlv-background">{/* <div className="mlv-eye"></div> */}</div>
     </div>
   );
 }

@@ -1,50 +1,27 @@
-.mlv-eye {
-  background-image: url(https://i.annihil.us/u/prod/marvel/html_pages_assets/error-pages/prod/black-widow-eye.d8a46f86.png);
-  width: 75px;
-  height: 75px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  margin: inherit;
-  background-size: cover;
-  margin-left: 44.6em;
-  margin-top: 15.1em;
-  animation-name: rotate;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.mlv-background {
-  background-image: url(https://i.annihil.us/u/prod/marvel/html_pages_assets/error-pages/prod/black-widow-char.e296fbe1.jpg);
-  height: 400px;
-  min-width: auto;
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  padding: 0;
-}
-.mlv-main-error-div {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  padding-right: 30px;
-  padding-left: 30px;
+.error-animation {
+  height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 60px;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
+  .eye-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+    .eye-error{
+      background-image: url(https://i.annihil.us/u/prod/marvel/html_pages_assets/error-pages/prod/black-widow-eye.d8a46f86.png);
+      min-width: 111px;
+      min-height: 111px;
+      bottom: 10.9%;
+      margin-left: 9.5%;
+      position: absolute;
+      right: 23.7%;
+      }
+    
+  
 
-.textIzquierdo {
-  width: 70%;
-  justify-self: right;
-}
