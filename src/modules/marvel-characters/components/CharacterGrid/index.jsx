@@ -25,7 +25,7 @@ export default function CharacterGridPaginated() {
     const data = await getCharactersForGrid(page, ITEMS_PER_PAGE);
     console.log(data);
     setTotalItems(data.total);
-    const filtered = data.results.filter((person) => person.name.indexOf("Aginar"));
+    const filtered = data.results.filter((person) => !person.name.indexOf("Abyss"));
     /////
     
    /* const filtered_users = data.results.filter(function (user) {
