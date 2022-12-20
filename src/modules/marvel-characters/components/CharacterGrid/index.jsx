@@ -5,6 +5,7 @@ import CharacterCard from '@/modules/marvel-characters/components/CharacterCard'
 import Paginator from '@/modules/core/components/molecules/Paginator';
 import './styles.scss';
 import Filter from '@/modules/core/components/molecules/Filter';
+
 // import Typed from "typed.js";
 const INITIAL_PAGE = 1;
 const ITEMS_PER_PAGE = 24;
@@ -26,9 +27,10 @@ export default function CharacterGridPaginated() {
     const data = await getCharactersForGrid(page,ITEMS_PER_PAGE);
     console.log(data);
     setTotalItems(data.total);
-    const filtered = data.results.filter(person => person.name.length < 20)
+    const filtered = data.results.filter(person => person.name.length < 8)
     console.log(filtered);
-    setCharacters(data.results);
+    //setCharacters(data.results);
+    setCharacters(filtered)
     setLoading(false);
   }
 
