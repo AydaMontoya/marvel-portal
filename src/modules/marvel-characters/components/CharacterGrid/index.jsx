@@ -34,7 +34,9 @@ export default function CharacterGridPaginated() {
     const queryDomain = 'https://gateway.marvel.com:443/v1/public/characters?nameStartsWith='+filterName+'&apikey=7f1b25dbb077597aa4531220f5ddad01'
     fetch (queryDomain)
     .then(response => response.json())
-    .then(data => setCharacters(data.data.results));
+    .then(data => setCharacters(data.data.results),
+    setTotalItems(characters.length+1));
+
   }
 
 
