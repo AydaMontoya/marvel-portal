@@ -30,10 +30,11 @@ export default function CharacterGridPaginated() {
   }
 
 
-  async function showFilteredCharacters() {
-    fetch ('https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=SPIDER&apikey=7f1b25dbb077597aa4531220f5ddad01')
+  async function showFilteredCharacters(filterName) {
+    const queryDomain = 'https://gateway.marvel.com:443/v1/public/characters?nameStartsWith='+filterName+'&apikey=7f1b25dbb077597aa4531220f5ddad01'
+    fetch (queryDomain)
     .then(response => response.json())
-    .then(data => console.log(data.data.results));
+    .then(data => setCharacters(data.data.results));
   }
 
 
@@ -55,8 +56,7 @@ export default function CharacterGridPaginated() {
 
   return (
     <>
-      <Filter totalItems={totalItems} query={queryParams} onQueryChange={onQueryChange} />
-      <button onClick={showFilteredCharacters}>BUSCAR</button>
+      <Filter totalItems={totalItems} query={queryParams} onQueryChange={onQueryChange} filterFunction={showFilteredCharacters} />
       <h5 className="mvl-character-grid-title">{totalItems} RESULTS</h5>
       <div className="mvl-grid mvl-grid-6">
         <CharacterGrid
