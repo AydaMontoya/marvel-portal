@@ -2,6 +2,7 @@ import React from 'react';
 import CharactersGrid from '@/modules/marvel-characters/components/CharacterGrid';
 import './styles.scss';
 import FeaturedCharacters from '../featuredCharactersPage';
+import CharacterSpotlight from 'src/modules/core/components/molecules/CharacterSpotlight';
 
 export function CharacterPage() {
   return (
@@ -16,6 +17,7 @@ export function CharacterPage() {
           {/* <p>Use this space to add some cards and other content </p> */}
         </section>
         <FeaturedCharacters />
+        <CharacterSpotlight />
         <h1>MARVEL CHARACTERS LIST</h1>
         <CharactersGrid />
       </div>
