@@ -5,6 +5,7 @@ import CharacterCard from '@/modules/marvel-characters/components/CharacterCard'
 import Paginator from '@/modules/core/components/molecules/Paginator';
 import './styles.scss';
 import Filter from '@/modules/core/components/molecules/Filter';
+
 // import Typed from "typed.js";
 const INITIAL_PAGE = 1;
 const ITEMS_PER_PAGE = 24;
@@ -28,6 +29,17 @@ export default function CharacterGridPaginated() {
     setLoading(false);
   }
 
+
+  async function showFilteredCharacters(filterName) {
+    const queryDomain = 'https://gateway.marvel.com:443/v1/public/characters?nameStartsWith='+filterName+'&apikey=7f1b25dbb077597aa4531220f5ddad01'
+    fetch (queryDomain)
+    .then(response => response.json())
+    .then(data => setCharacters(data.data.results),
+    setTotalItems(characters.length+1));
+
+  }
+
+
   const onPageChange = (newPage) => {
     fetchCharactersAtPage(newPage);
   };
@@ -46,7 +58,7 @@ export default function CharacterGridPaginated() {
 
   return (
     <>
-      <Filter totalItems={totalItems} query={queryParams} onQueryChange={onQueryChange} />
+      <Filter totalItems={totalItems} query={queryParams} onQueryChange={onQueryChange} filterFunction={showFilteredCharacters} />
       <h5 className="mvl-character-grid-title">{totalItems} RESULTS</h5>
       <div className="mvl-grid mvl-grid-6">
         <CharacterGrid
