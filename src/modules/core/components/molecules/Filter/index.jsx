@@ -30,7 +30,7 @@ export default function Filter(props) {
         <button onClick={settingName}>BUSCAR</button>
       </div>
       <div className='mvl-movie-filter'>
-        <button onClick={showBox}>MOVIES <Drop/></button>
+        <button onClick={showBox}>Series <Drop/></button>
         {show?<MyDropdown />:<></>}
       </div>
       
