@@ -2,11 +2,7 @@ import React from 'react';
 import './styles.scss';
 import PropTypes from 'prop-types';
 
-CharacterCard.propTypes = {
-  image: PropTypes.string,
-  name: PropTypes.string,
-  isSkeleton: PropTypes.bool
-};
+
 
 export default function CharacterCard({ image, name, isSkeleton }) {
   return (
