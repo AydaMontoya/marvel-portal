@@ -5,7 +5,7 @@ const BASE_URL = `https://gateway.marvel.com/v1/public/`;
 const PAGENATE_BY = 20;
 
 const credentials = {
-  apikey: process.env.REACT_APP_PUBLIC_KEY
+  apikey: '888a4fbd4cff1f77a8b98b44f5fd1f97'
 };
 
 export async function getAllPaginated(
