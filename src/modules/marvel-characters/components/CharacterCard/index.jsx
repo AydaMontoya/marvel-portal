@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.scss';
 import PropTypes from 'prop-types';
 
+
 export default function CharacterCard({ image, name, isSkeleton }) {
   return (
     <div className="mvl-character-card" data-is-skeleton={isSkeleton}>
@@ -15,3 +16,9 @@ export default function CharacterCard({ image, name, isSkeleton }) {
     </div>
   );
 }
+
+CharacterCard.propTypes = {
+  image: PropTypes.image,
+  name: PropTypes.string,
+  isSkeleton: PropTypes.number
+};
